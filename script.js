@@ -1,5 +1,14 @@
 // script.js — Advanced interactions, animations, particles, parallax, SoundCloud control
 document.addEventListener('DOMContentLoaded', () => {
+  // Navbar scroll detection for sticky header
+  const navWrap = document.querySelector('.nav-wrap');
+  function handleNavbarScroll() {
+    const isScrolled = window.scrollY > 50;
+    navWrap.classList.toggle('scrolled', isScrolled);
+  }
+  window.addEventListener('scroll', handleNavbarScroll, {passive: true});
+  handleNavbarScroll();
+
   // Scroll reveal with staggered animation
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, idx) => {
