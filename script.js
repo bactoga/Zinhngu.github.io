@@ -1,4 +1,4 @@
-// script.js — interactions, animations, particles, SoundCloud control
+// script.js — interactions, animations, particles, SoundCloud control, parallax
 document.addEventListener('DOMContentLoaded', () => {
   // Scroll reveal
   const io = new IntersectionObserver((entries) => {
@@ -7,7 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, {threshold: 0.12});
 
-  document.querySelectorAll('.glass, .member-card, .service-card, .about-card').forEach(el => io.observe(el));
+  document.querySelectorAll('.glass, .member-card, .service-card, .about-card, .logo-card').forEach(el => io.observe(el));
+
+  // Parallax effect for hero and sections
+  function parallax(){
+    const y = window.scrollY;
+    const bgAnim = document.getElementById('bg-anim');
+    if(bgAnim) bgAnim.style.transform = `translateY(${y * 0.5}px)`;
+  }
+  window.addEventListener('scroll', parallax, {passive:true});
 
   // Simple nav active handling
   const navLinks = document.querySelectorAll('.nav-links a');
@@ -90,7 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', ()=>{
     const y = window.scrollY;
     navWrap.style.backdropFilter = y>20 ? 'blur(8px) saturate(1.05)' : 'blur(0px)';
-    navWrap.style.borderBottom = y>20 ? '1px solid rgba(255,255,255,0.03)' : 'none';
+    navWrap.style.borderBottom = y>20 ? '1px solid rgba(225,29,47,0.08)' : 'none';
     lastY = y;
+  });
+
+  // Logo card hover glow effect
+  document.querySelectorAll('.logo-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.borderColor = 'rgba(225,29,47,0.3)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.borderColor = 'rgba(255,255,255,0.06)';
+    });
   });
 });
