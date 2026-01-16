@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crimson Collective — Team</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg-anim" aria-hidden="true"></div>
+  <canvas id="particles"></canvas>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="logo" href="#hero">Crimson<span>+</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#music">Music</a></li>
+      </ul>
+      <div class="nav-ctas">
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+        <a class="btn btn-primary" href="#about">Join Team</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="team-name">Crimson Collective</h1>
+          <p class="tagline">We build secure, scalable, and futuristic digital systems.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about">Join Team</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+            <a class="btn btn-light" href="#services">Explore</a>
+          </div>
+        </div>
+        <div class="hero-card glass">
+          <h3>Live Status</h3>
+          <div class="status-grid">
+            <div class="status-item">
+              <span class="dot online"></span>
+              <div>
+                <div class="label">API</div>
+                <div class="sub">Active • 12ms</div>
+              </div>
+            </div>
+            <div class="status-item">
+              <span class="dot secure"></span>
+              <div>
+                <div class="label">Server</div>
+                <div class="sub">Secure • 99.99%</div>
+              </div>
+            </div>
+            <div class="status-item">
+              <span class="dot active"></span>
+              <div>
+                <div class="label">Chat</div>
+                <div class="sub">Active • 24/7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About The Team</h2>
+        <div class="about-grid">
+          <div class="glass about-card">
+            <p>Crimson Collective is a multidisciplinary team obsessed with security, performance, and elegant UX. We ship high-impact systems for modern enterprises while keeping prototype speed.</p>
+            <div class="icons-row">
+              <div class="icon-wrap" title="Research">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 2a7 7 0 100 14A7 7 0 009 2zM21 21l-4.35-4.35"></path></svg>
+                <span>Research</span>
+              </div>
+              <div class="icon-wrap" title="Security">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V5l-9-4z"></path></svg>
+                <span>Security</span>
+              </div>
+              <div class="icon-wrap" title="Design">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l4 4-9 9-4-4 9-9z"></path></svg>
+                <span>Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="glass about-stats">
+            <div class="stat">
+              <div class="num">24</div>
+              <div class="label">Members</div>
+            </div>
+            <div class="stat">
+              <div class="num">10+</div>
+              <div class="label">Years Combined</div>
+            </div>
+            <div class="stat">
+              <div class="num">99.9%</div>
+              <div class="label">Uptime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="section team">
+      <div class="container">
+        <h2 class="section-title">Team Members</h2>
+        <div class="members-grid">
+          <article class="member-card glass">
+            <div class="avatar">JD</div>
+            <h3>Jordan Doe</h3>
+            <p class="role">Lead Engineer</p>
+            <p class="bio">Systems architect with a background in distributed systems and cryptography.</p>
+          </article>
+          <article class="member-card glass">
+            <div class="avatar">AM</div>
+            <h3>Ava Moore</h3>
+            <p class="role">Product Designer</p>
+            <p class="bio">Designs delightful interfaces with focus on accessibility and motion.</p>
+          </article>
+          <article class="member-card glass">
+            <div class="avatar">RK</div>
+            <h3>Ravi Kapoor</h3>
+            <p class="role">Security Engineer</p>
+            <p class="bio">Threat modelling, secure pipelines, and privacy-first engineering.</p>
+          </article>
+          <article class="member-card glass">
+            <div class="avatar">LN</div>
+            <h3>Lee Nguyen</h3>
+            <p class="role">DevOps</p>
+            <p class="bio">CI/CD, fast infra, and observability expert.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Services & Expertise</h2>
+        <div class="services-grid">
+          <div class="service-card glass">
+            <div class="service-icon">🔒</div>
+            <h4>Security Audits</h4>
+            <p>Comprehensive vulnerability assessments and remediation plans.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon">⚡</div>
+            <h4>Performance</h4>
+            <p>Architecture and implementation tuned for low-latency and scale.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon">🎛️</div>
+            <h4>Platform Engineering</h4>
+            <p>Robust pipelines, monitoring, and infrastructure as code.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon">🛰️</div>
+            <h4>Emerging Tech</h4>
+            <p>Experimentation with AI, blockchain, and edge systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section support">
+      <div class="container">
+        <h2 class="section-title">Support & Server</h2>
+        <div class="support-grid">
+          <div class="glass support-card">
+            <h4>Support</h4>
+            <p>24/7 dedicated channel, SLAs, and priority response.</p>
+            <div class="cta-row">
+              <a class="btn btn-ghost" href="#contact">Get Support</a>
+              <a class="btn btn-primary" href="#contact">Open Ticket</a>
+            </div>
+          </div>
+          <div class="glass server-card">
+            <h4>Server Features</h4>
+            <ul>
+              <li><span class="badge online">Online</span> Multi-region</li>
+              <li><span class="badge secure">Secure</span> Encrypted at rest</li>
+              <li><span class="badge active">Active</span> Auto-scaling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="section music">
+      <div class="container">
+        <h2 class="section-title">Ambient — Team Sound</h2>
+        <div class="music-wrap glass">
+          <div class="music-meta">
+            <div>
+              <div class="m-title">Studio Ambient</div>
+              <div class="m-sub">Lo-fi background soundscape</div>
+            </div>
+            <div class="m-controls">
+              <button id="sc-play" class="btn btn-primary">Play</button>
+              <button id="sc-pause" class="btn btn-ghost">Pause</button>
+            </div>
+          </div>
+          <div class="sc-player">
+            <!-- Replace the 'src' below with your SoundCloud track / set URL -->
+            <iframe id="sc-iframe" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/forss/flickermood&color=%23e11d2f&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-wrap glass">
+        <h2 class="section-title">Contact</h2>
+        <p>Reach out for collaborations, support, or to join the team.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hello@crimson.example">Email Us</a>
+          <a class="btn btn-ghost" href="#">Join Slack</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="container footer-inner">
+      <div class="left">© <strong>Crimson Collective</strong> • Crafted with precision</div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter" class="icon"> <svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 5.9c-.7.3-1.4.5-2.2.6.8-.5 1.3-1.3 1.6-2.3-.8.5-1.6.8-2.5 1C18.2 4 17 3.5 15.6 3.5c-2 0-3.6 1.7-3.6 3.7 0 .3 0 .6.1.9C8.2 7.8 5.1 6.1 3 3.6c-.3.6-.5 1.3-.5 2 0 1.3.7 2.5 1.8 3.2-.6 0-1.1-.2-1.6-.5v.1c0 2 1.4 3.7 3.2 4-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.2 1.6 2 3 2-1.1.9-2.5 1.4-4.1 1.4H6c1.5.9 3.2 1.5 5.1 1.5 6.1 0 9.4-5.1 9.4-9.6v-.4c.7-.5 1.3-1.1 1.8-1.9-.6.3-1.3.5-2 .6z"/></svg></a>
+        <a href="#" aria-label="GitHub" class="icon"> <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.7.5.9 5.3.9 11.6c0 4.7 3 8.7 7.2 10.1.5.1.7-.2.7-.5v-1.8c-2.9.6-3.6-1.3-3.6-1.3-.5-1.2-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.6 1.1 1.6 1.1 1 .1 1.7.7 2.1 1.3.1-1 .4-1.6.8-2-2.5-.3-5.2-1.3-5.2-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.4 0 0 1-.3 3.3 1.2 1-.3 2.1-.4 3.2-.4 1.1 0 2.2.1 3.2.4 2.3-1.5 3.3-1.2 3.3-1.2.6 1.8.2 3.1.1 3.4.8.9 1.2 2 1.2 3.2 0 4.6-2.7 5.6-5.2 5.9.4.4.7 1 .7 2v3c0 .3.2.6.7.5 4.2-1.4 7.2-5.4 7.2-10.1C23 5.3 18.3.5 12 .5z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
